@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D-FAF & P-FAF</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>D-FAF & P-FAF Encoder/Decoder</h1>
+    <form id="dfaf-form">
+        <h2>D-FAF</h2>
+        <label for="dfaf-input">Input Array (comma-separated):</label>
+        <input type="text" id="dfaf-input" placeholder="e.g., 1,2,3,4">
+        <label for="dfaf-a">Scaling Constant (a):</label>
+        <input type="number" id="dfaf-a" value="1.0" step="0.1">
+        <label for="dfaf-iterations">Iterations:</label>
+        <input type="number" id="dfaf-iterations" value="10">
+        <button type="button" onclick="runDfaf()">Run D-FAF</button>
+    </form>
+    <form id="pfaf-form">
+        <h2>P-FAF</h2>
+        <label for="pfaf-input">Input Array (comma-separated):</label>
+        <input type="text" id="pfaf-input" placeholder="e.g., 1,2,3,4">
+        <label for="pfaf-a">Scaling Constant (a):</label>
+        <input type="number" id="pfaf-a" value="1.0" step="0.1">
+        <label for="pfaf-iterations">Iterations:</label>
+        <input type="number" id="pfaf-iterations" value="10">
+        <label for="pfaf-noise">Noise Level:</label>
+        <input type="number" id="pfaf-noise" value="0.1" step="0.01">
+        <button type="button" onclick="runPfaf()">Run P-FAF</button>
+    </form>
+    <script src="/static/script.js"></script>
+</body>
+</html>
