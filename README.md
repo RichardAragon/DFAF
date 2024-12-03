@@ -9,7 +9,7 @@ The D-FAF aims to capture fractal patterns deterministically within an activatio
 We define the D-FAF as an iterative function that applies a deterministic fractal transformation to its input:
 
 \[
-\text{D-FAF}(x) = \lim_{n \to \infty} f^{(n)}(x)
+{D-FAF}(x) = \lim_{n \to \infty} f^{(n)}(x)
 \]
 
 where \( f^{(n)}(x) \) is recursively defined as:
